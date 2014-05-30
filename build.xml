@@ -5,10 +5,10 @@
 	<property file="build.properties" />
 
 	<!-- Property default values. May be overridden using above files or via command-line args -->
-	<property name="jar.name" value="alfresco-persistence-layer.jar" />
+	<property name="jar.name" value="orbeon-persistence-layer.jar" />
 	<property name="config.includes" value="**/*.*" />
 	<property name="build.lib.dir" value="webapps/alfresco/WEB-INF/lib" />
-	<property name="src" value="source/java" />
+	<property name="src" value="src/main/java" />
 
 	<!-- Additional property values. Generally should not be overridden -->
 	<property name="config.dir" value="${basedir}/config" />
