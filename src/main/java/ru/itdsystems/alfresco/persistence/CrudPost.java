@@ -48,9 +48,9 @@ import org.w3c.dom.NodeList;
 /**
  * Webscript (Persistence API Post) implementation to perform a search inside
  * repository.
- * 
+ *
  * @author Alexey Ermakov
- * 
+ *
  */
 
 public class CrudPost extends AbstractCrudWebScript {

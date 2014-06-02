@@ -38,9 +38,9 @@ import org.springframework.extensions.webscripts.WebScriptResponse;
 /**
  * Webscript (Persistence API Put) implementation to put or update new file in a
  * repository.
- * 
+ *
  * @author Alexey Ermakov
- * 
+ *
  */
 
 public class CrudPut extends AbstractCrudWebScript {

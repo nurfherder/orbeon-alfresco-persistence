@@ -17,8 +17,8 @@
 		<property name="serviceRegistry" ref="ServiceRegistry" />
 		<property name="callbackClassName">
 			<value>${ru.itdsystems.alfresco.persistence.post.callback}</value>
-		</property>		
-	</bean>	
+		</property>
+	</bean>
 	<bean id="webscript.ru.itdsystems.alfresco.persistence.crud.put" class="ru.itdsystems.alfresco.persistence.CrudPut"
 		parent="webscript">
 		<property name="repository" ref="repositoryHelper" />
@@ -32,7 +32,7 @@
 		<property name="versionable">
 			<value>${ru.itdsystems.alfresco.persistence.put.versionable}</value>
 		</property>
-	</bean>	
+	</bean>
 	<bean id="webscript.ru.itdsystems.alfresco.persistence.crud.delete" class="ru.itdsystems.alfresco.persistence.CrudDelete"
 		parent="webscript">
 		<property name="repository" ref="repositoryHelper" />

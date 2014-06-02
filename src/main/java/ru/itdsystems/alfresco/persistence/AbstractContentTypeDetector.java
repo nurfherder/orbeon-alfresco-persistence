@@ -38,7 +38,7 @@ public abstract class AbstractContentTypeDetector {
 		this.repository = repository;
 		this.serviceRegistry = registry;
 	}
-	
+
 	// returns QName of type that should be used
 	public abstract QName detectMimetype(List<String> pathElements, String fileName, InputStream contents);
 

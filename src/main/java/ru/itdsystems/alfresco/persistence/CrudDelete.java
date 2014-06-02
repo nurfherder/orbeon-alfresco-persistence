@@ -32,9 +32,9 @@ import org.springframework.extensions.webscripts.WebScriptResponse;
 /**
  * Webscript (Persistence API Delete) implementation to delete file from a
  * repository.
- * 
+ *
  * @author Alexey Ermakov
- * 
+ *
  */
 
 public class CrudDelete extends AbstractCrudWebScript {

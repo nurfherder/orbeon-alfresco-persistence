@@ -31,9 +31,9 @@ import org.springframework.extensions.webscripts.WebScriptResponse;
 /**
  * Webscript (Persistence API Get) implementation to return file from a
  * repository.
- * 
+ *
  * @author Alexey Ermakov
- * 
+ *
  */
 
 public class CrudGet extends AbstractCrudWebScript {

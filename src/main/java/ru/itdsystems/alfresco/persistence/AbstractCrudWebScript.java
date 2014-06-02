@@ -33,7 +33,7 @@ import org.springframework.extensions.webscripts.WebScriptResponse;
 /**
  * Abstract persistence webscript implementation
  * @author Alexey Ermakov
- * 
+ *
  */
 
 public abstract class AbstractCrudWebScript extends AbstractWebScript
@@ -76,7 +76,7 @@ public abstract class AbstractCrudWebScript extends AbstractWebScript
 			throw new Exception("Can't load callback class: "+callbackClassName, e);
 		}
 	}
-	
+
 	public abstract void execute(WebScriptRequest req,
 			WebScriptResponse res) throws WebScriptException;
 
@@ -86,7 +86,7 @@ public abstract class AbstractCrudWebScript extends AbstractWebScript
 		NodeRef currentUser = personService.getPerson(currentUserName);
 		return repository.getUserHome(currentUser);
 	}
-	
+
 	// wrappers for callbacks
 	public void doBefore(List<String> pathElements, NodeRef nodeRef) throws WebScriptException{
 		if (callback != null)
@@ -98,7 +98,7 @@ public abstract class AbstractCrudWebScript extends AbstractWebScript
 				throw new WebScriptException(500, "Error occured during callback execution.", e);
 			}
 	}
-	
+
 	public void doAfter(List<String> pathElements, NodeRef nodeRef) throws WebScriptException {
 		if (callback != null)
 			try {
@@ -107,7 +107,7 @@ public abstract class AbstractCrudWebScript extends AbstractWebScript
 				// TODO
 				// decide what should we do if callback failed
 				throw new WebScriptException(500, "Error occured during callback execution.", e);
-			}		
+			}
 	}
 
 
